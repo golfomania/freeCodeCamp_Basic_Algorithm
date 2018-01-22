@@ -1,14 +1,9 @@
 function palindrome(str) {
-  // Good luck!
-  str = str.replace(/\W+/gi, '');
+  str = str.replace(/[^a-z1-9]+/gi, "");
   str = str.toLowerCase();
-  var restr = [];
-  restr =    str.split();
+
+  var restr = str.split("");
   restr = restr.reverse();
-  restr = restr.join('');
+  restr = restr.join("");
 return(str == restr);
 }
-
-
-
-palindrome("eye");
