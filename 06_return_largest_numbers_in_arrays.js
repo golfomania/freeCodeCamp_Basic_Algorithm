@@ -1,3 +1,17 @@
+function largestOfFour(arr) {
+  for (var i= 0; i<arr.length; i++){
+    var calc = arr[i];
+    calc = calc.sort(function(a,b){
+      return b-a;
+    });
+    arr[i] = calc[0];
+  }
+  return arr;
+}
+
+
+
+//same with comments
 //function to search the sub elements of an array
 //return an array of the biggest numbers of each array
 function largestOfFour(arr) {

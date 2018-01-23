@@ -1,3 +1,18 @@
+function palindrome(str) {
+  str = str.replace(/[^a-z0-9]+/gi, "");
+  str = str.toLowerCase();
+
+  var restr = str.split("");
+  restr = restr.reverse();
+  restr = restr.join("");
+
+  return(str == restr);
+}
+
+
+
+
+//same with comments
 //function to check if parameter is a palindrome string
 function palindrome(str) {
   //replace all leters with are NOT in the group of a-z 0 or 9

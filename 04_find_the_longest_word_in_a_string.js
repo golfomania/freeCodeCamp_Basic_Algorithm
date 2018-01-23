@@ -1,3 +1,15 @@
+function findLongestWord(str) {
+  str = str.split(" ");
+  str.sort(function(a, b) {
+    return b.length - a.length;
+  });
+
+  return str[0].length;
+}
+
+
+
+//same with comments
 //function to find the longest word inside a given string and return the lenth of it
 function findLongestWord(str) {
   //split the string into a array splitted by whithespace
