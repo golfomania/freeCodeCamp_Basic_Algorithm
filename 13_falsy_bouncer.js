@@ -6,6 +6,7 @@ function bouncer(arr) {
 
 
 
+
 //same with comments
 //function to sort out any falsy (false, null, 0, "", undefined, and NaN)
 //elements out of an given array
