@@ -18,13 +18,13 @@ function factorialize(num){
 //same with comments
 //function to factorialize a number e.g. 5! = 5*4*3*2*1
 function factorialize(num){
-    //check if given number is zero, then the answer is set to 1
+    //check if given number is zero, then the answer is fixed set to 1
     if (num == 0 ){
     return 1;
     }
 
-    //all other numbers where calculated using a for loop
-    //taking care not to decrease i till zero
+    //all other numbers are being calculated using a for loop
+    //taking care not to decrease "i" till zero
     else{
     var result = num;
         for (var i=num; i>1;i--){
